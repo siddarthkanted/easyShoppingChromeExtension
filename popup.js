@@ -6,7 +6,7 @@ function openTabs(){
 
 function urlOpener(urlArray){
 for (var count in urlArray) {
-		window.open(urlArray[count], count);
+		chrome.tabs.create({url: urlArray[count], "active":true});
 	}
 }
 
@@ -25,6 +25,9 @@ function urls(productName){
                 return $(this).val();
             }).get();
 			
+	if(!productName)
+		productName = "mobiles";
+		
 	for (var count in checkValues) {
 		checkValues[count] = String.format(checkValues[count], productName);
 	}		
