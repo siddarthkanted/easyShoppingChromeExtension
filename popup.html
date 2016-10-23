@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+
+	
+        <title>Compare Prices</title>
+        <script src="jquery-1.10.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="popup.css">
+        
+    </head>
+	
+    <body style="min-width:320px;">
+		<h1>Search easily</h1>
+		
+		<input type="text" placeholder="Enter the product name" id="productNameText" class="searchtextbox"></input><br><br>
+		
+		<input type="checkbox" name="checkboxList" id="amazonCheckbox" value="http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={0}&tag=httpssiddarth-21" checked>Amazon<br>
+		<input type="checkbox" name="checkboxList" id="flipkartCheckbox" value="https://www.flipkart.com/search?q={0}&affid=siddarthk" checked>Flipkart<br>
+		<input type="checkbox" name="checkboxList" id="snapdealCheckbox" value="https://www.snapdeal.com/search?keyword={0}&aff_id=77922" checked>Snapdeal<br><br>
+		
+		<input type="submit" id="submitButton" class="highlightGreen" value="Search"></input>
+		<a id="openDealsAnchor" class="highlightRed">Deals of the day</a>
+		
+		<script src="popup.js" type="text/javascript"></script>
+    </body>
+	
+
+</html>
